@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="150px" height="180px" viewBox="0 0 150 180" enable-background="new 0 0 150 180" xml:space="preserve">
+	<g class="balloon-1">
+		<path class="balloon-body" fill="#168989" d="M135,17C118.8,1.7,99.8,0,75,0H75C50.2,0,31.2,2.7,15,18s-21.9,42.1,0,76c21.9,33.9,41,56,41,56
+		s13.4,16.9,19,16.9S94,150,94,150s19.1-23.1,41-57C156.9,59.1,151.2,32.3,135,17z"/>
+		<path class="balloon-flap" fill="rgba(255,255,255,0.5)" d="M56,150c0,0,13.4,16.9,19,16.9c5.6,0,19-16.9,19-16.9H56z"/>
+		<g class="balloon-flame">
+			<path class="flame-outer" fill="#FFD746" d="M84.9,154.8c0-1.4-0.2-3.1-0.7-4.8H65.6c-0.4,1.7-0.7,3.3-0.7,4.8c0,6.4,9.1,11.6,10,12.1
+			C75.8,166.4,84.9,161.2,84.9,154.8z"/>
+			<path class="flame-mid" fill="#fffa4d" d="M81.9,155.3c0-1.5-0.5-3.4-1.2-5.3H69.1c-0.7,1.9-1.2,3.8-1.2,5.3c0,5.5,6.2,10.9,7,11.6
+			C75.7,166.2,81.9,160.8,81.9,155.3z"/>
+			<path class="flame-inner" fill="#FFFFFF" d="M77.7,150h-5.4c-0.2,1.4-0.3,2.6-0.3,3.7c0,5.7,3,13.2,3,13.2s3-7.5,3-13.2C78,152.6,77.9,151.4,77.7,150z"
+			/>
+		</g>
+		<path class="balloon-basket" fill="#494949" d="M84.1,180H65.9c-0.5,0-0.9-0.4-0.9-0.9v-8.3c0-0.5,0.4-0.9,0.9-0.9h18.3c0.5,0,0.9,0.4,0.9,0.9v8.3
+		C85,179.6,84.6,180,84.1,180z"/>
+	</g>
+</svg>

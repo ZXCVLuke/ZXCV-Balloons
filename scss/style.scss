@@ -1,0 +1,120 @@
+// compileCompressed: ../css/style.css
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(186deg, #38b494, #5b5daa, #d98d42);
+  background-size: 600% 600%;
+  animation: bg-fade 60s ease infinite;
+  font-size: 1em;
+}
+
+.intro {
+  width: 25em;
+  margin: 0 auto;
+  position: relative;
+  top: 30%;
+  text-align: center;
+  color: white;
+
+  a {
+    color: khaki;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+
+.opening-line {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+
+
+// Balloon controls
+
+$number-of-balloons: 10;
+
+.balloon-container {
+  animation: drift 100s infinite;
+  position: absolute;
+}
+
+.balloon {
+  animation-name: lift;
+}
+
+.balloon-flame , .balloon-flap, .balloon-body-flame {
+  visibility: hidden;
+  animation-name: fire;
+}
+
+.balloon, .balloon-flame, .balloon-flap, .balloon-body-flame {
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@for $i from 1 through $number-of-balloons {
+  .balloon-#{$i} {
+    top: random(40) + 10%;
+    left: random(80) + 10%;
+    width: random(50) + $i + 20px;
+    animation-delay: random(100) * -1s;
+    .balloon, .balloon-flame, .balloon-flap, .balloon-body-flame {
+      animation-delay: random(100) * -1s;;
+    }
+    .balloon-body {
+      $red: random(256)-1;
+      $green: random(256)-1;
+      $blue: random(256)-1;
+      fill: rgb($red, $green, $blue);
+    }
+  }
+}
+
+@keyframes lift {
+  10% { transform: translate(0, 0);}
+  20% { transform: translate(0, -40px);}
+}
+
+@keyframes fire {
+  11% { visibility: visible; }
+  12% { visibility: hidden; }
+}
+
+@keyframes drift {
+  0% {transform: translate(0, 0);}
+  7% {transform: translate(10px, 20px);}
+  13% {transform: translate(-15px, -7px);}
+  22% {transform: translate(-50px, 5px);}
+  34% {transform: translate(-75px, -10px);}
+  40% {transform: translate(-40px, -2px);}
+  42% {transform: translate(10px, 10px);}
+  48% {transform: translate(2px, 30px);}
+  54% {transform: translate(34px, 20px);}
+  67% {transform: translate(15px, 3px);}
+  75% {transform: translate(3px, -7px);}
+  79% {transform: translate(5px, -18px);}
+  100% {transform: translate(0, 0);}
+}
+
+@keyframes bg-fade {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
